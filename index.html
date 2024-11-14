@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+      <img src="logo.png" alt="Logo da Alurabooks" class="container__imagem" width="150">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre aqui diversos livros para seu entreterimento!</p>
+    <input type="search" class="banner__pesquisa" placeholder="O que você procura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">sagas literarias</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="3280956461_4.webp"
+            alt="saga o povo do ar"></div>
+        <div class="swiper-slide"><img src="crepusculo.webp"
+            alt="saga crepusculo"></div>
+        <div class="swiper-slide"><img src="heart.webp" alt="box heartstopper">
+        </div>
+        <div class="swiper-slide">
+          <img src="percyjackson.jpeg" alt="box percy jackson" />
+        </div>
+        <div class="swiper-slide">
+          <img src="harrypotter.jpeg" alt="saga harry potter" />
+        </div>
+        <div class="swiper-slide">
+          <img src="jogosvorazes.jpg" alt="box jogos vorazes" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+
+      
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">anuncio</h3>
+          <h2 class="descrição__titulo-livro">BONUS DE BOAS-VINDAS!!</h2>
+          <p class="descrição__texto">
+           Faça login agora e ganhe R$30,00 de bonús!!
+          </p>
+         
+    
+        </div>
+        <img src="tigrinho.jpeg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">instalar</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">talvez vocÊ goste</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="vbsa.webp"
+            alt="Livro vermelho branco e sangue azul"></div>
+        <div class="swiper-slide"><img src="gfalls.jpeg" alt="Livro gravity falls">
+        </div>
+        <div class="swiper-slide"><img src="orgulho.jpeg" alt="Livro orgulho e preconceito">
+        </div>
+        <div class="swiper-slide"><img src="mamdibula.jpeg" alt="livro mandibula de caim"></div>
+        <div class="swiper-slide"><img src="pequeno principe.jpg" alt="Livro pequeno principe"></div>
+        <div class="swiper-slide"><img src="junjito.webp" alt="livro coletania de terror junjito"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autor do Mês</h3>
+          <h2 class="descrição__titulo-livro">Gael Sem Sobrenome</h2>
+          <p class="descrição__texto">Escritor trans, autor de “Eu nos declaro marido & marido” e “A alma gêmea que eu quiser”
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="gael.jpg" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">mangas</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="spy family.jpg"
+              alt="spy x family"></div>
+          <div class="swiper-slide"><img src="aotm.webp"
+              alt="atack on titan"></div>
+          <div class="swiper-slide"><img src="given.jpg" alt="given">
+          </div>
+          <div class="swiper-slide">
+            <img src="demon.jpg" alt="demon slayer" />
+          </div>
+          <div class="swiper-slide">
+            <img src="jjt.jpg" alt="jujutsu kaisen" />
+          </div>
+          <div class="swiper-slide">
+            <img src="punpun.jpg" alt="box jogos vorazes" />
+          </div>
+        </div>
+  
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+  
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
